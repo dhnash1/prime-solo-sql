@@ -16,4 +16,4 @@ select * from syntax_practice where account_balance > 100;
 --8.add a record
 insert into syntax_practice (username, city, transactions_completed, transactions_attempted, account_balance) values ('Gita', 'Minneapolis', 1337, 9001, 100000000);
 --9.Ice-cold account closures
-delete from syntax_practice where transactions_completed < 5;
+delete from syntax_practice where transactions_completed < 5 and city='miami' or transactions_completed < 5 and city = 'phoenix';
